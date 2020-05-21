@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>02_ajax_getJson.html</title>
+<script src="//code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	 $.getJSON('JSONTest.jsp', function (data){
+		 
+		 $('#name').val(data['name']);
+	     $('#gender').val(data.gender);
+	     $('#part').val(data.part);
+		  
+	 });
+});
+</script>
+
+</head>
+<body>
+<form name="f">
+  <input type="text" id="name" name="name"><br>
+  <input type="text" id="gender" name="gender"><br>
+  <input type="text" id="part" name="part"><br>
+</form>
+
+</body>
+</html>

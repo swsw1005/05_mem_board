@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03_ajax_getJson.html</title>
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script>
+        $(document).ready(function() {
+
+          $.getJSON('JSONTest.jsp', function (data) {
+           /*
+        	 var table="<tr>";
+         	 table+="<td>" + (data.name)+"</td>";
+        	 table+="<td>" + (data.gender)+"</td>";
+        	 table+="<td>" + (data.part)+"</td>";
+         	 table += "</tr>";
+         	  
+         	 $("#tt").append(table);	 
+           */
+           var table="<tr>";
+           for (var i in data) {
+         	  table+="<td>"+(data[i])+"</td>";
+            }//for ---
+            table += "</tr>";
+           $("#tt").append(table);	 
+          });
+        });
+ </script>
+</head>
+<body>
+
+<table id="tt" border="1">
+</table>
+
+</body>
+</html>

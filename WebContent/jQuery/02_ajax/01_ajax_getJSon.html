@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>01_ajax_getJSon.html</title>
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	 $.getJSON('JSONTest.jsp', function (data){
+		 
+		 for(var i in data) {
+	      $('<h1></h1>').text(i + ' : ' + data[i])
+	      .appendTo('body');
+	   }//for
+		  
+	 });
+});
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

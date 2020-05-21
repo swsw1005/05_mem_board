@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>json_post.html</title>
+<script src="//code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$.ajax({
+		type : 'POST',
+		url : 'json_post.jsp',
+		//data : "name=홍길동&location=서울",
+		//dataType:'JSON',
+		dataType:'html',
+		success : function(data){ // 콜백 성공 응답시 실행
+			 $('div').html(data);	
+		}
+	});
+});
+
+</script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+create database ch20;
+
+use ch20
+
+drop table member;
+create table member(
+id varchar(20) primary key,
+passwd varchar(10) not null,
+name varchar(30)   not null ,
+jumin1 varchar(6)  not null  ,
+jumin2 varchar(7)   not null ,
+email varchar(30)   not null ,
+zipcode varchar(7)  not null  ,
+addr varchar(60)  not null  ,
+job varchar(30)   ,
+regdate date  
+);
+
+desc member;
+;
+
+
+
+
+inputForm.jsp >> inputPro.jsp
+
+id중복체크 ajax로  confirmID.jsp
+주소입력 kakao  openAPI

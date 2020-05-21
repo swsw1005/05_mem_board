@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>01_ajax_get.html</title>
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	 $.get('aa.txt', function (data) {
+		 alert(data)
+		 $('body').html(data);//클라이언트에 반영 
+	 });
+});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
