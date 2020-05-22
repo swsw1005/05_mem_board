@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEAD ------------------------------------------------------------------------------------ -->
+    <!-- head가 맨 나중?나중에 나온 요소가 레이어 맨위로... ---------------------------------------->
+    <header class="topnav w3-card" id="topNav">
+        <a href="AAAAAA" class="active">AAAAAA</a> <a href="BBBBBB">BBBBBB</a>
+        <a href="CCCCCC">CCCCCC</a> <a href="DDDDDD">DDDDDD</a> <a href="javascript:void(0);" class="icon" onclick="responsiveMenuPopUp()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function responsiveMenuPopUp() {
+            var x = document.getElementById("topNav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

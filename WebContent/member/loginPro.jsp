@@ -9,7 +9,7 @@ System.out.println("------loginPro.jsp");
 %>
 
 <%  String id=request.getParameter("id");
-String passwd=request.getParameter("password");
+String passwd=request.getParameter("passwd");
 
 System.out.println(id+"+"+passwd);
 

@@ -164,18 +164,18 @@
 			<form name="userForm" action="inputPro.jsp" method="POST">
 				<!-- ////////////////////////////////////////////// -->
 				<div class="form-group">
-					<label for="id">ID</label>
-					<div class="row">
+					
 						<!-- ----------------------------------------------------------------------------- -->
-						<div class="col-sm-4">
+						<div class="col-sm-8" style="display: flex;">
+						<label for="id">ID</label>
 							<input name="id" id="id" placeholder="Input id" type="text"
-								class="form-control" required="required">
+								class="form-control m" required="required">
+								<button id="confirmIdBtn" class="btn btn-default" type="button">ID체크</button>
 						</div>
 						<!-- ----------------------------------------------------------------------------- -->
-						<div class="col-sm-2">
-							<button id="confirmIdBtn" class="btn btn-default" type="button">ID체크</button>
+						<div class="col-sm-8">
+							
 						</div>
-					</div>
 					<!-- ----------------------------------------------------------------------------- -->
 					<div class="row">
 						<div id="confirmIdResult" class="col-sm-10"></div>
