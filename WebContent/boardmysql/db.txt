@@ -13,7 +13,8 @@ drop table board;
       ref int default 0,
       re_step int not null,
       re_level int not null,
-      ip varchar(30) not null
+      ip varchar(30) not null,
+      password varchar(30) not null
     );
 
     desc board;

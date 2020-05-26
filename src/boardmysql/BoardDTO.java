@@ -14,7 +14,6 @@ public class BoardDTO {
     private String email;
     private String title;
     private String content;
-    private String pw;
     private Date regdate;
     private int readcount;
     private int ref; // 글 그룹
@@ -22,5 +21,6 @@ public class BoardDTO {
     private int re_level; // 글 깊이(답글 깊이)
 
     private String ip;
+    private String password;
 
 }
